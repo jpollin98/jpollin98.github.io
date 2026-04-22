@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Joshua Pollin | Postdoctoral Scholar at Oregon State University | Type Ia Supernovae & Radiative Transfer</title>
+		<title>Joshua Pollin | Astrophysicist | Supernovae, Radiative Transfer, and Explosive Transients</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Joshua Pollin is a postdoctoral scholar at Oregon State University specialising in Type Ia supernovae, core-collapse supernova modelling, and multidimensional Monte Carlo radiative transfer calculations." />
+		<meta name="description" content="Joshua Pollin is a postdoctoral scholar at Oregon State University developing multidimensional NLTE radiative transfer models to connect supernova explosion physics, nucleosynthesis, and observations across thermonuclear and core-collapse transients." />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
 		<style>
@@ -435,12 +435,11 @@
 				</div>
 				<div class="nav-links" id="navLinks">
 					<a href="#header">Home</a>
-					<a href="#one">About Me</a>
+					<a href="#one">Research Vision</a>
 					<a href="#skills">Skills</a>
 					<a href="#projects">Research</a>
 					<a href="#two">Publications</a>
-					<a href="#impact">Impact</a>
-					<a href="#outreach">Public Talks</a>
+					<a href="#impact">Key Contributions</a>
 					<a href="#three">Contact</a>
 					<a href="#map">Places</a>
 					<a href="#pictures">Pictures</a>
@@ -452,9 +451,15 @@
 		<header id="header">
 			<div class="inner">
 				<a href="#" class="avatar"><img src="images/avatar.png" alt="Joshua Pollin" /></a>
-				<h1><strong>Hello there! I'm Josh Pollin</strong></h1>
+				<h1><strong>Joshua Pollin</strong></h1>
 				<p>Postdoctoral Scholar in Astrophysics<br />
 				Oregon State University</p>
+				<p style="max-width: 700px; margin: 20px auto;">
+				I develop multidimensional radiative transfer models to reveal the true 3D structure of supernova explosions and connect nucleosynthesis directly to observations.
+				</p>
+				<p style="max-width: 700px; margin: 20px auto; font-weight: 500;">
+				My goal is to unify the diverse subclasses of Type Ia supernovae within a single physical framework, and to extend full NLTE modelling across explosive transients — from thermonuclear supernovae to core-collapse explosions.
+				</p>
 			</div>
 		</header>
 
@@ -463,18 +468,18 @@
 
 			<!-- About Me -->
 			<section id="one">
-				<button class="collapsible">About Me</button>
+				<button class="collapsible">Research Vision</button>
 				<div class="content">
-					<p>I am a postdoctoral scholar at Oregon State University working on theoretical modelling of explosive transients, combining hydrodynamics and radiative transfer. I develop multidimensional Monte Carlo radiative transfer calculations to connect simulations with spectra, light curves, and late-time diagnostics. My aim is to uncover the physical basis of Type Ia supernova standardization and to link explosive nucleosynthesis to the chemical evolution of galaxies.</p>
+					<p>I am a postdoctoral scholar at Oregon State University working on theoretical modelling of explosive transients. My research combines hydrodynamics and multidimensional Monte Carlo radiative transfer to interpret spectra, light curves, and late-time diagnostics.</p>
+
+					<p>A central goal of my work is to understand why Type Ia supernovae are standardizable, and whether their observed diversity can be explained within a unified physical framework. By modelling the full 3D structure of the ejecta, I aim to link explosion physics and nucleosynthesis directly to observable signatures.</p>
+
+					<p>More broadly, I am developing next-generation NLTE radiative transfer models that can be applied across the landscape of explosive transients. This includes extending detailed modelling to core-collapse supernovae, enabling direct comparisons between thermonuclear and massive-star explosions within a consistent framework.</p>
 
 					<div class="figure-panel">
 						<img src="images/Light_curve_evolution.png" alt="Schematic figure illustrating the diffusion phase, early tail phase, and late tail phase of supernova light-curve evolution" />
-						<p class="figure-caption">This figure highlights how different phases of supernova evolution probe different ejecta layers, and why late-time calculations are especially powerful for connecting radiative transfer, nucleosynthesis, and the inner structure of the explosion.</p>
+						<p class="figure-caption">Different phases of supernova evolution probe different ejecta layers. Late-time calculations are especially powerful for connecting radiative transfer, nucleosynthesis, and the inner structure of the explosion.</p>
 					</div>
-
-					<p>My research contributes to our understanding of the progenitor systems of explosive transients. I am especially interested in 3D NLTE calculations, nebular-phase spectra, asymmetries in thermonuclear supernova ejecta, and using synthetic observables to connect explosive nucleosynthesis to current and future observations.</p>
-
-					<p>At Oregon State University I also work on core-collapse supernova modelling, alongside my work on thermonuclear supernovae and radiative transfer.</p>
 
 					<ul class="actions">
 						<li><a href="documents/Joshua_Pollin_CV.pdf" class="button" target="_blank">My CV</a></li>
@@ -482,29 +487,23 @@
 				</div>
 			</section>
 
-			<!-- Skills -->
 			<section id="skills">
-				<button class="collapsible">Research Focus</button>
+				<button class="collapsible">Technical Expertise</button>
 				<div class="content">
-					<h3>What I am interested in</h3>
-					<p>I work on the physics of supernovae, with a particular focus on 3D NLTE radiative transfer, nebular-phase Type Ia supernovae, explosive nucleosynthesis, and the link between multidimensional explosion models and observed spectra and light curves.</p>
+
+					<p>
+					I develop and run large-scale multidimensional simulations of supernovae, combining radiative transfer, hydrodynamics, and nucleosynthesis on high-performance computing systems.
+					</p>
 
 					<ul class="research-pill-list">
-						<li>3D NLTE RT</li>
-						<li>Type Ia supernovae</li>
-						<li>Explosive nucleosynthesis</li>
-						<li>Synthetic spectra and light curves</li>
-						<li>Ejecta asymmetries</li>
-						<li>Core-collapse supernova modelling</li>
-						<li>Polarisation</li>
+						<li>3D NLTE Monte Carlo radiative transfer (ARTIS)</li>
+						<!--<li>1D Radiative diffusion (SEDONA)</li> -->
+						<li>Hydrodynamic supernova modelling (PUSH)</li>
+						<li>Nucleosynthesis post-processing (CFNET)</li>
+						<li>High-performance computing (MPI, OpenMP, ~95M CPU hrs awarded)</li>
+						<li>C/C++, Python, Fortran, Bash</li>
 					</ul>
 
-					<div class="figure-panel">
-						<img src="images/Viewing_Angles.png" alt="Figure showing how ejecta asymmetries produce line shapes not captured by 1D models" />
-						<p class="figure-caption">Asymmetries in the ejecta can strongly affect nebular line morphologies. This is one of the clearest examples of why multidimensional calculations are needed to interpret late-time spectra.</p>
-					</div>
-
-					<p class="highlight-note">I am especially interested in connecting multidimensional explosion physics to observable signatures that can be tested with current and future data.</p>
 				</div>
 			</section>
 
@@ -515,23 +514,23 @@
 					<div class="row">
 						<article class="col-6 col-14-xsmall work-item">
 							<a href="images/science_plots/multid_nebular.png" class="image fit thumb"><img src="images/science_plots/multid_nebular.png" alt="Nebular phase simulation" /></a>							
-							<h3>Nebular-Phase Radiative Transfer Calculations</h3>
-							<p>Investigating the nebular phase of explosion models provides a direct route to understanding the innermost ejecta and the progenitors of Type Ia supernovae. This has been a core aspect of my research and has required substantial development of the detailed microphysics in the radiative transfer codes I use.</p>
+							<h3>Nebular-Phase Radiative Transfer</h3>
+							<p>I use nebular-phase calculations to probe the innermost ejecta of thermonuclear explosions, where line profiles and ionisation balance provide direct constraints on progenitor systems, asymmetries, and nucleosynthetic structure.</p>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/science_plots/Photospheric.png" class="image fit thumb"><img src="images/science_plots/Photospheric.png" alt="Photospheric phase simulation" /></a>
-							<h3>Multidimensional Thermonuclear Supernova Modelling</h3>
-							<p>I study how different white dwarf masses, helium shells, and merger configurations affect the spectra and light curves of thermonuclear supernovae, with a particular emphasis on what can only be learned from multidimensional modelling.</p>
+							<h3>Unifying Type Ia Supernova Diversity</h3>
+							<p>I investigate how white dwarf mass, helium shells, and merger geometry shape observables, with the broader aim of unifying normal Type Ia supernovae and their subclasses within a single physical picture.</p>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/science_plots/Nebular_composition.png" class="image fit thumb"><img src="images/science_plots/Nebular_composition.png" alt="Polarization data" /></a>
-							<h3>Polarisation Signals of Dynamical Mergers</h3>
-							<p>Polarisation provides a complementary probe of asymmetry in explosion models. By comparing predicted signals with observational constraints, I aim to test and refine possible progenitor pathways.</p>
+							<h3>Polarisation and Ejecta Geometry</h3>
+							<p>Polarisation offers a complementary probe of three-dimensional structure. By modelling orientation-dependent signatures, I test how explosion asymmetries map onto observables that cannot be captured in spherical symmetry.</p>
 						</article>
 						<article class="col-6 col-12-xsmall work-item">
 							<a href="images/science_plots/SiII_velocity_one_explosions_peakcolour.png" class="image fit thumb"><img src="images/science_plots/SiII_velocity_one_explosions_peakcolour.png" alt="Code comparison" /></a>
-							<h3>Core-Collapse and Type Ia Supernova Modelling</h3>
-							<p>At Oregon State University I also work on core-collapse supernova modelling, alongside my Type Ia work, using radiative transfer and synthetic observables to connect explosion models with data.</p>
+							<h3>Modelling Across the Explosive Transients landscape</h3>
+							<p>At Oregon State University I am extending detailed NLTE modelling beyond thermonuclear supernovae to core-collapse explosions, building a broader programme for interpreting explosive transients within a consistent radiative-transfer framework.</p>
 						</article>
 					</div>
 				</div>
@@ -541,13 +540,14 @@
 			<section id="two">
 				<button class="collapsible">Publications</button>
 				<div class="content">
-					<h3>First Author</h3>
+					<h3>Selected First-Author Publications</h3>
 					<div class="row">
 						<div class="col-12">
 							<ul>
-								<li><strong>J. M. Pollin</strong>, S. A. Sim, R. Pakmor et al., <a href="https://academic.oup.com/mnras/article/533/3/3036/7730271" target="_blank">"On the fate of the secondary white dwarf in double-degenerate double-detonation Type Ia supernovae - II. 3D synthetic observables"</a>, 2024, MNRAS</li>
-								<li><strong>J. M. Pollin</strong>, S. A. Sim, R. Pakmor et al., <a href="https://arxiv.org/abs/2507.05000" target="_blank">"On the fate of the secondary white dwarf in double-degenerate double-detonation Type Ia supernovae - III. 3D nebular-phase synthetic observables"</a>, accepted, 2025</li>
+								<li><strong>Pollin et al. (2025)</strong> — <a href="https://arxiv.org/abs/2507.05000" target="_blank">Multidimensional Nebular-Phase Calculations of Dynamically-Driven Double-Degenerate Double-Detonation Models for Type Ia Supernovae</a> (MNRAS, accepted)</li>
+								<li><strong>Pollin et al. (2024)</strong> — <a href="https://academic.oup.com/mnras/article/533/3/3036/7730271" target="_blank">On the Fate of the Secondary White Dwarf in Double-Degenerate Double-Detonation Type Ia Supernovae — II. 3D Synthetic Observables</a> (MNRAS 533, 3036–3052)</li>
 							</ul>
+							<p>I have also contributed to work on electron-capture supernovae, Ca-rich transients, violent mergers, double detonations, and observational studies of peculiar Type Ia supernovae.</p>
 						</div>
 					</div>															
 					<ul class="actions">
@@ -558,37 +558,31 @@
 
 			<!-- Research Impact -->
 			<section id="impact">
-				<button class="collapsible">Research Impact</button>
+				<button class="collapsible">Key Contributions</button>
 				<div class="content">
-					<p>My work on Type Ia supernovae and radiative transfer contributes to our understanding of stellar evolution, explosive nucleosynthesis, and how multidimensional explosion physics imprints itself on observable spectra and light curves. Key accomplishments include:</p>
+					<p>My work combines code development, large-scale simulation campaigns, and observational interpretation. Selected contributions include:</p>
 					
 					<ul>
-						<li>Developed the capability to conduct the first fully 3D NLTE Nebular simulations for Type Ia supernovae.</li>
-						<li>Published the first 3D photospheric simulations of dynamical mergers.</li>
-						<li>Conducted the first 3D polarisation calculations for dynamical mergers.</li>
-						<li>Expanded my research programme to include core-collapse supernova modelling at Oregon State University.</li>					
+						<li>Developed the first fully 3D NLTE nebular-phase radiative transfer simulations for Type Ia supernovae.</li>
+						<li>Produced the first multidimensional photospheric-phase synthetic observables of dynamical mergers.</li>
+						<li>Performed the first 3D polarisation calculations for double-degenerate explosion models.</li>
+						<li>Helped secure and exploit approximately 95 million CPU hours across major national and international HPC facilities.</li>
+						<li>Contributed to successful large-scale proposals on DiRAC, JUWELS, and SuperMUC-NG, translating computational resources into first-author and collaborative publications.</li>
+						<li>Expanded my research programme to include core-collapse supernova modelling and nucleosynthesis post-processing.</li>					
 					</ul>
+
+					<p>Other highlights include co-investigator status on a successful ESO VLT FORS2 proposal, invited talks at Trinity College Dublin and Leiden, and organising a National Astronomy Meeting session on explosive transients.</p>
 				</div>
 			</section>
 
 			<!-- Public Outreach -->
-			<section id="outreach">
-				<button class="collapsible">Public Talks</button>
-				<div class="content">
-					<h3>Royal Astronomical Society Talk</h3>
-					<p>In this talk, I discuss Type Ia supernovae, their importance for cosmology, and explain my research on understanding their nebular spectra.</p>
-					
-					<div class="video-container">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/yainoIj-Ugk" title="Joshua Pollin - Royal Astronomical Society Lecture" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</section>
+
 
 			<!-- Contact -->
 			<section id="three">
 				<button class="collapsible">Get In Touch</button>
 				<div class="content">
-					<p>I'm always interested in research collaborations, particularly in transient modelling, radiative transfer, supernova theory, and high-performance computing applications in astrophysics. Feel free to reach out and lets collaborate!</p>
+					<p>I'm always interested in research collaborations, particularly in transient modelling, radiative transfer, supernova theory, and high-performance computing applications in astrophysics. Feel free to reach out — I am always interested in new collaborations.</p>
 					<ul class="labeled-icons">
 						<li>
 							<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
@@ -597,12 +591,11 @@
 						</li>
 						<li>
 							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-							<a href="mailto:jpollin02@qub.ac.uk">jpollin02@qub.ac.uk</a>
-						</li>
+							<a href="mailto:pollinj@oregonstate.edu">pollinj@oregonstate.edu</a>
 						</li>
 						<li>
 							<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-							<a href="mailto:pollinj@oregonstate.edu">pollinj@oregonstate.edu</a>
+							<a href="mailto:jpollin02@qub.ac.uk">jpollin02@qub.ac.uk</a>
 						</li>
 					</ul>
 				</div>

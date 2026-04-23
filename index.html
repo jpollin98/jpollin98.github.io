@@ -192,6 +192,20 @@
 				height: 100%;
 			}
 
+			/* Video container for local mp4 */
+			.video-container-local {
+				width: 100%;
+				margin-bottom: 20px;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+			}
+
+			.video-container-local video {
+				width: 100%;
+				display: block;
+			}
+
 			/* Add this to your existing CSS */
 			.icon img.bluesky-logo {
 				filter: grayscale(100%); /* Convert the logo to grayscale */
@@ -422,6 +436,47 @@
 				margin-top: 10px;
 			}
 
+			/* Highlight cards for recent news */
+			.highlight-card {
+				background: #f0f4f8;
+				border-left: 4px solid #4CAF50;
+				border-radius: 0 8px 8px 0;
+				padding: 14px 18px;
+				margin-bottom: 16px;
+			}
+
+			.highlight-card h4 {
+				margin: 0 0 6px 0;
+				font-size: 1em;
+				color: #222;
+			}
+
+			.highlight-card p {
+				margin: 0;
+				font-size: 0.93em;
+				color: #555;
+			}
+
+			/* D6² image panel */
+			.d6-panel {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 20px;
+				align-items: flex-start;
+				margin: 20px 0;
+			}
+
+			.d6-panel img {
+				flex: 1 1 260px;
+				max-width: 320px;
+				border-radius: 8px;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+				background: #000;
+			}
+
+			.d6-panel-text {
+				flex: 2 1 300px;
+			}
 
 			/* Left-hand header: stronger white text + fixed sidebar on desktop */
 			#header {
@@ -484,11 +539,14 @@
 				</div>
 				<div class="nav-links" id="navLinks">
 					<a href="#header">Home</a>
+					<a href="#about">About Me</a>
+					<a href="#highlights">Highlights</a>
 					<a href="#one">Research Vision</a>
 					<a href="#skills">Skills</a>
 					<a href="#projects">Research</a>
 					<a href="#two">Publications</a>
 					<a href="#impact">Key Contributions</a>
+					<a href="#outreach">Teaching &amp; Outreach</a>
 					<a href="#three">Contact</a>
 					<a href="#map">Places</a>
 					<a href="#pictures">Pictures</a>
@@ -515,7 +573,74 @@
 		<!-- Main -->
 		<div id="main">
 
-			<!-- About Me -->
+			<!-- ===================== ABOUT ME (NEW) ===================== -->
+						<!-- ===================== ABOUT ME (NEW) ===================== -->
+			<section id="about">
+				<button class="collapsible">About Me</button>
+				<div class="content">
+					<p>
+						I grew up near Holywood, Northern Ireland, and went to Queen's University Belfast (QUB) to study a BSc in Physics before switching to an integrated Masters. It was during my Masters research project that I fell in love with transient astrophysics — and I haven't looked back since. My Masters and PhD were supervised by <strong>Professor Stuart Sim</strong> at QUB, where I developed a deep interest for radiative transfer and the physics of exploding stars.
+					</p>
+ 
+					<p>
+						A central focus of my PhD was the <strong>dynamically-driven double-degenerate double-detonation (D6) scenario</strong>, which I believe is the most promising progenitor for normal Type Ia supernovae. In this scenario, two white dwarfs in a binary system interact — both can explode, and as such are often called quadruple detonation events. The video below illustrates this remarkable process.
+					</p>
+					<p>
+						Outside of research, I enjoy running (I recently finished my first half marathon!), rock climbing, hiking, and video games. I believe strongly that astronomy and astrophysics is for everyone, and I thrive in collaborative, supportive environments where people lift each other up.
+					</p>					
+ 
+					<div class="video-container-local">
+						<video controls>
+							<source src="videos/quadruple_detonation.mp4" type="video/mp4">
+							Your browser does not support the video tag. <a href="videos/quadruple_detonation.mp4">Download the video</a>.
+						</video>
+					</div>
+					<p style="font-size:0.9em; color:#666; margin-top: -10px; margin-bottom: 20px; text-align: center;"><em>3D hydrodynamic simulation of the D6 scenario (movie credit: R. Pakmor).</em></p>
+ 
+					<p>
+						My <a href="https://pure.qub.ac.uk/en/studentTheses/exploring-the-origins-of-type-ia-supernovae-with-monte-carlo-radi/" target="_blank">PhD thesis</a>, <em>"Exploring the Origins of Type Ia Supernovae with Monte Carlo Radiative Transfer"</em>, covers this work in full detail.
+					</p>
+ 
+					<ul class="actions">
+						<li><a href="https://pure.qub.ac.uk/en/studentTheses/exploring-the-origins-of-type-ia-supernovae-with-monte-carlo-radi/" class="button" target="_blank">PhD Thesis</a></li>
+						<li><a href="documents/Joshua_Pollin_CV.pdf" class="button" target="_blank">My CV</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- ===================== RECENT HIGHLIGHTS (NEW) ===================== -->
+			<section id="highlights">
+				<button class="collapsible">Recent Highlights</button>
+				<div class="content">
+
+					<div class="highlight-card">
+						<h4>📄 Paper Accepted — Multidimensional Nebular-Phase Calculations (April 2026)</h4>
+						<p>My paper <em>"Multidimensional Nebular-Phase Calculations of Dynamically-Driven Double-Degenerate Double-Detonation Models for Type Ia Supernovae"</em> has been accepted for publication in MNRAS. This is the first fully 3D NLTE nebular-phase radiative transfer simulations for Type Ia supernovae. <a href="https://arxiv.org/abs/2507.05000" target="_blank">Read on arXiv →</a></p>
+					</div>
+
+					<div class="highlight-card">
+						<h4>🎓 Started Postdoctoral Position at Oregon State University (January 2026)</h4>
+						<p>I recently began a postdoctoral scholar position at Oregon State University, where I am modelling to core-collapse supernovae with Dr Sanjana Curtis and building a broader programme for understanding explosive transients.</p>
+					</div>
+
+					<div class="highlight-card">
+						<h4>🏆 PhD Awarded — Queen's University Belfast (December 2025)</h4>
+						<p>I successfully completed and defended my PhD at Queen's University Belfast under the supervision of Professor Stuart Sim. My thesis explored the origins of Type Ia supernovae using Monte Carlo radiative transfer. <a href="https://pure.qub.ac.uk/en/studentTheses/exploring-the-origins-of-type-ia-supernovae-with-monte-carlo-radi/" target="_blank">Read the thesis →</a></p>
+					</div>
+
+					<div class="highlight-card">
+						<h4>🌟 Astrobites Feature — Unburnt Helium in SNe Ia (July 2025)</h4>
+						<p>A co-authored paper on unburnt helium in Type Ia supernovae was featured on the Astrobites blog. <a href="https://astrobites.org/2025/07/02/unburnt-helium-sne-ia/" target="_blank">Read the Astrobite →</a></p>
+					</div>
+
+					<ul class="actions">
+						<li><a href="https://scholar.google.com/citations?user=RyTosYAAAAAJ&hl=en" class="button" target="_blank">Full Publication List on Google Scholar</a></li>
+						<li><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Pollin%2C%20J.%20M.%22&sort=date%20desc%2C%20bibcode%20desc" class="button" target="_blank">ADS Publication List</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- About Me / Research Vision -->
 			<section id="one">
 				<button class="collapsible">Research Vision</button>
 				<div class="content">
@@ -603,7 +728,8 @@
 						</div>
 					</div>															
 					<ul class="actions">
-						<li><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Pollin%2C%20J.%20M.%22&sort=date%20desc%2C%20bibcode%20desc" class="button">Complete Publication List</a></li>
+						<li><a href="https://ui.adsabs.harvard.edu/search/p_=0&q=author%3A%22Pollin%2C%20J.%20M.%22&sort=date%20desc%2C%20bibcode%20desc" class="button">ADS Publication List</a></li>
+						<li><a href="https://scholar.google.com/citations?user=RyTosYAAAAAJ&hl=en" class="button" target="_blank">Google Scholar</a></li>
 					</ul>
 				</div>
 			</section>
@@ -627,8 +753,34 @@
 				</div>
 			</section>
 
-			<!-- Public Outreach -->
+			<!-- ===================== TEACHING, OUTREACH & TALKS (NEW) ===================== -->
+			<section id="outreach">
+				<button class="collapsible">Teaching, Outreach &amp; Talks</button>
+				<div class="content">
 
+					<p>
+						I believe strongly that <strong>astronomy and astrophysics is for everyone</strong>. Science thrives when it is open, inclusive, and collaborative — and I am committed to contributing to an environment where people from all backgrounds feel welcome and supported. We are stronger together, and diversity of perspective makes for better science and scientists.
+					</p>
+
+					<h3>Recent Talks</h3>
+					<p>Below is a recording of a recent research talk I gave, covering my work on multidimensional radiative transfer modelling for Type Ia supernovae.</p>
+
+					<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/yainoIj-Ugk" title="Joshua Pollin research talk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+
+					<h3>Mentoring</h3>
+					<p>
+						I recently mentored <strong>Anna Hayes</strong> as a summer research assistant, supporting her in developing skills in radiative transfer analysis and scientific computing, and has continued into academia. Mentoring the next generation of astrophysicists is something I care deeply about, and I enjoy creating a supportive environment where students feel empowered to ask questions and pursue their own curiosity.
+					</p>
+
+					<h3>Outreach</h3>
+					<p>
+						I am passionate about communicating astrophysics beyond the academic community. I enjoy public engagement and am happy to talk about supernovae, cosmology, and the life cycle of stars to audiences of all ages and backgrounds. If you are interested in an outreach event or school visit, please feel free to <a href="#three">get in touch</a>.
+					</p>
+
+				</div>
+			</section>
 
 			<!-- Contact -->
 			<section id="three">
